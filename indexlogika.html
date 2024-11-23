@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang='uk'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Магазин пончиків</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+    body {
+        font-family: 'Unbounded', sans-serif;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: url('https://img.freepik.com/free-photo/elevated-view-donuts-with-sprinkles-blue-backdrop_23-2147909429.jpg');
+        background-size: cover;
+        height: 197.5px;
+        padding: 15px;
+        width: 100%;
+    }
+    header img {
+        padding-top: 30px;
+        width: 150px;
+        height: 150px;
+    }
+    header h1 {
+        font-size: 50px;
+        color: #FF97DB;
+        padding-top: 45px;
+        margin-right: 20px;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        text-align: center;
+        background-color: #97e8ff;
+        width: 100%;
+        height: 55px;
+        top: 0px;
+        left: 0px;
+    }
+    nav a {
+        padding-right: 100px;
+        font-size: 20px;
+        padding-left: 130px;
+        padding-top: 15px;
+        color: #6e82f2;
+        text-decoration: none;
+    }
+    .menu {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .item-card {
+        text-align: center;
+        width: 23%;
+        margin-right: 28px;
+        margin-bottom: 25px;
+    }
+    .item-card img {
+        height: 315px;
+        border-radius: 15px;
+    }
+    .item-name {
+        margin-top: 10px;
+    }
+    .item-desc {
+        font-size: 12.5px;
+    }
+    .item-price {
+        margin-bottom: 0px;
+    }
+    .cart-btn {
+        cursor: pointer;
+        user-select: none;
+        font-weight: 500;
+        padding: 5px;
+        text-align: center;
+        background-color: #FF97DB;
+        border-radius: 15px;
+        color: white;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .cart-btn:hover {
+        background-color: #97baff;
+    }
+    footer {
+        width: 100%;
+        background-color: #97e8ff;
+        color: #6e82f2;
+        padding: 15px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Світ пончиків</h1>
+        <img src="uploads/2023/02/donut.png">
+    </header>
+    <main>
+        <nav>
+            <a href='http://127.0.0.1:5500/indexlogika.html#:~:text=%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B8-,%D0%93%D0%BB%D0%B0%D0%B7%D1%83%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D1%96%20%D0%BF%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%D0%B8,-%D0%9A%D0%BB%D0%B0%D1%81%D0%B8%D1%87%D0%BD%D1%96%20%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F%D0%BD%D1%96%20%D0%BF%D0%BE%D0%BD%D1%87%D0%B8%D0%BA%D0%B8'>Меню</a>
+            <a href="">₊✩‧₊˚౨ৎ˚₊✩‧₊</a>
+            <a href='#'>Контакти</a>
+        </nav>
+        <div class="menu">
+            <article class="item-card">
+                <img src="maxresdefault.jpg">
+                <h3 class="item-name">Глазуровані пончики</h3>
+                <p class="item-desc">Класичні повітряні пончики, вкриті тонким шаром солодкої глазурі.</p>
+                <div class="cart-btn">
+                <p class="item-price">20 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Sugar-donuts-08719.jpg">
+                <h3 class="item-name">Запечені пончики з цукром</h3>
+                <p class="item-desc">Класичні пончики, запечені до ідеалу й щедро обсипані цукром.</p>
+                <div class="cart-btn">
+                <p class="item-price">20 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Cinnamon-Sugar-Mini-Donuts-Recipe.jpeg">
+                <h3 class="item-name">Запечені міні-пончики</h3>
+                <p class="item-desc">Легкі й ніжні мініатюрні пончики, ідеальні для швидкої перекуски.</p>
+                <div class="cart-btn">
+                <p class="item-price">20 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="baked-caramel-apple-donuts-with-crushed-peanuts-1200.jpg">
+                <h3 class="item-name">Запечені яблучно-карамельні пончики</h3>
+                <p class="item-desc">Солодкі запечені пончики з яблуками та карамеллю і посипані горіхами, що тануть у роті.</p>
+                <div class="cart-btn">
+                <p class="item-price">30 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="IMG_8620-2.jpg">
+                <h3 class="item-name">Полуничні глазуровані пончики</h3>
+                <p class="item-desc">Ароматні пончики, вкриті полуничною глазур'ю зі свіжих ягід.</p>
+                <div class="cart-btn">
+                <p class="item-price">28 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Blueberry-Cake-Donuts-FI.jpg">
+                <h3 class="item-name">Пончики Чорничний торт</h3>
+                <p class="item-desc">Насичені чорничним смаком пончики з ніжною текстурою, як у торта.</p>
+                <div class="cart-btn">
+                <p class="item-price">28 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="vegan-chocolate-donuts-recipe.jpg">
+                <h3 class="item-name">Запечені шоколадні пончики</h3>
+                <p class="item-desc">Ніжні запечені пончики з глибоким шоколадним смаком і вкриті кольоровою посипкою.</p>
+                <div class="cart-btn">
+                <p class="item-price">28 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Raspberry_Doughnuts_B_1125.jpg">
+                <h3 class="item-name">Запечені малинові пончики</h3>
+                <p class="item-desc">Ніжні запечені пончики, наповнені свіжим малиновим смаком і прикрашені яскравою фруктовою глазур'ю.</p>
+                <div class="cart-btn">
+                <p class="item-price">30 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Mochi_Donuts_Dozen.0.jpg">
+                <h3 class="item-name">Мочі-пончики</h3>
+                <p class="item-desc">Легкі та жувальні пончики на основі рисового тіста з азійським колоритом.</p>
+                <div class="cart-btn">
+                <p class="item-price">32 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="oreo-donuts-recipe.jpg">
+                <h3 class="item-name">Пончики Орео</h3>
+                <p class="item-desc">Смачні пончики з подрібненими печивами Орео та кремовою глазур'ю.</p>
+                <div class="cart-btn">
+                <p class="item-price">35 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="baked-mochi-donuts-DSC_3500-1x1-1200-500x500.jpg">
+                <h3 class="item-name">Пончики з матчею</h3>
+                <p class="item-desc">Незвичайні пончики з додаванням зеленої матча-чаю, що додає їм особливого смаку.</p>
+                <div class="cart-btn">
+                <p class="item-price">33 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="5G1A8184.jpg">
+                <h3 class="item-name">Пончики з лавандою</h3>
+                <p class="item-desc">Витончені пончики з легким ароматом лаванди та ніжною глазур'ю.</p>
+                <div class="cart-btn">
+                <p class="item-price">35 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="MVI_9989.MOV.04_35_14_22.Still001_fb.jpg">
+                <h3 class="item-name">Пончики з арахісовим маслом та джемом</h3>
+                <p class="item-desc">Класичне поєднання арахісового масла та фруктового джему в форматі пончика.</p>
+                <div class="cart-btn">
+                <p class="item-price">30 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Sweet-Potato-Doughnuts-Recipe.jpeg">
+                <h3 class="item-name">Пончики з солодкої картоплі</h3>
+                <p class="item-desc">Незвичний, але смачний вибір з ніжної текстури і легкого аромату солодкої картоплі.</p>
+                <div class="cart-btn">
+                <p class="item-price">27 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="cinnamon-sugar-donut-twists-1-2.jpg">
+                <h3 class="item-name">Закрутки з корицею і цукром</h3>
+                <p class="item-desc">Ароматні закручені пончики, вкриті корицею і цукром, що надає їм теплої солодкості та хрусткої скоринки.</p>
+                <div class="cart-btn">
+                <p class="item-price">35 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="maple-bacon-donuts-feature.jpg">
+                <h3 class="item-name">Пончики з беконом і кленовим сиропом</h3>
+                <p class="item-desc">Сміливе поєднання солодкого і солоного: ніжні пончики з беконом та ароматним кленовим сиропом.</p>
+                <div class="cart-btn">
+                <p class="item-price">35 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="berliner-german-jam-doughnut-12.jpg">
+                <h3 class="item-name">Берлінські пончики</h3>
+                <p class="item-desc">Класичні німецькі пончики з пухкою текстурою, наповнені джемом або кремом і посипані цукровою пудрою.</p>
+                <div class="cart-btn">
+                <p class="item-price">30 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="sufganiyot-jelly-filled-donuts-2.jpg">
+                <h3 class="item-name">Пончики Суфґанійот</h3>
+                <p class="item-desc">Традиційні ізраїльські пончики, наповнені солодким джемом і обсипані цукровою пудрою.</p>
+                <div class="cart-btn">
+                <p class="item-price">30 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+            <article class="item-card">
+                <img src="Boston-Cream-Donuts-1-500x500.jpg">
+                <h3 class="item-name">Бостонські кремові пончики</h3>
+                <p class="item-desc">Класичні пончики з повітряним заварним кремом і шоколадною глазур'ю.</p>
+                <div class="cart-btn">
+                    <p class="item-price">30 грн за шт.</p>
+                    <div class="btn">Додати в кошик</p>
+                    </div>
+            </article>
+            <article class="item-card">
+                <img src="bavarian-cream-donuts-1.jpg">
+                <h3 class="item-name">Баварські кремові пончики</h3>
+                <p class="item-desc">Смачні пончики з баварським кремом і щедрою порцією цукрової пудри.</p>
+                <div class="cart-btn">
+                <p class="item-price">35 грн за шт.</p>
+                <div class="btn">Додати в кошик</p>
+                </div>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <h2>Наша контактна інформація:</h2>
+        <p>Локація: Вул. Пончиків 49, Ужгород</p>
+        <p>Номер: 1234567890</p>
+        <p>Інстаграм: @donuts.world_ua</p>
+    </footer>
+</body>
+</html>
